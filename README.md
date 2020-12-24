@@ -64,7 +64,7 @@ This folder has results for Active Learning Strategies, Data Sampling and outlie
 
 
 
-Prerequisites:
+5: Prerequisites:
 
 Python Version: 3
 

@@ -63,8 +63,14 @@ functions in module:
 This folder has results for Active Learning Strategies, Data Sampling and outlier detection.
 
 
+5: ExampleUsage.txt
 
-5: Prerequisites:
+Example usage text file provides information and example results for Active Learning.
+
+
+
+----------------
+Prerequisites:
 
 Python Version: 3
 

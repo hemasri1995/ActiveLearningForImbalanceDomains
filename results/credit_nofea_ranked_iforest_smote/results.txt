@@ -1,0 +1,290 @@
+C:\Users\18732\AppData\Local\Programs\Python\Python37\python.exe C:/Users/18732/Desktop/paula_final_project/ActiveLearningUnbalancedMain/ActiveLearningUnbalancedMain/ALGeneric_V4.py
+---------------------------------------
+Select data set to perform active learning
+1: Credit Card
+2: adTracking
+3: cis fraud
+1
+---------------------------------------
+Loading Dataset
+---------------------------------------
+Select Feature Selection option
+1: Recursive Feature Selection
+2: No Feature Selection
+2
+---------------------------------------
+Shape of data set :(284807, 30)
+Preparing Initial Training, Pool and Test sets for initial AL
+training set size: 25632
+pool set size: 59810
+test set size: 199365
+---------------------------------------
+Select Strategy
+1: Ranked Batch using Uncertainity
+2: Query By Committee Batch
+1
+---------------------------------------
+---------------------------------------
+Enter Batch Size :(Default is 10)
+
+5
+---------------------------------------
+---------------------------------------
+Enter Outlier Detection Method
+1: LOF
+2: One Class SVM
+3: IForest
+4: No Outlier3
+---------------------------------------
+---------------------------------------
+Enter Data sampling Technique for Imbalanced Data
+1: SMOTE
+2: ADASYN
+3: Random Oversampling
+4: No Sampling
+1
+---------------------------------------
+========================
+Initial Training Results
+========================
+Accuracy after query 0: 0.9989
+[[198888    133]
+ [    94    250]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.65      0.73      0.69       344
+
+    accuracy                           1.00    199365
+   macro avg       0.83      0.86      0.84    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.8630379574295246
+========================
+Learning phase with 10 queries
+Total number of records per batch 5  divided into
+Uncertain samples: 3
+outlier samples: 1
+========================
+---------------------------------------
+Learning phase Query: 1
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+C:\Users\18732\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\ensemble\iforest.py:415: DeprecationWarning: threshold_ attribute is deprecated in 0.20 and will be removed in 0.22.
+  " be removed in 0.22.", DeprecationWarning)
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 1: 0.9975
+[[198652    369]
+ [   128    216]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.37      0.63      0.47       344
+
+    accuracy                           1.00    199365
+   macro avg       0.68      0.81      0.73    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.813026450521816
+---------------------------------------
+Learning phase Query: 2
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+C:\Users\18732\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\ensemble\iforest.py:415: DeprecationWarning: threshold_ attribute is deprecated in 0.20 and will be removed in 0.22.
+  " be removed in 0.22.", DeprecationWarning)
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 2: 0.9982
+[[198783    238]
+ [   123    221]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.48      0.64      0.55       344
+
+    accuracy                           1.00    199365
+   macro avg       0.74      0.82      0.77    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.8206230033806179
+---------------------------------------
+Learning phase Query: 3
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+C:\Users\18732\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\ensemble\iforest.py:415: DeprecationWarning: threshold_ attribute is deprecated in 0.20 and will be removed in 0.22.
+  " be removed in 0.22.", DeprecationWarning)
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 3: 0.9981
+[[198778    243]
+ [   135    209]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.46      0.61      0.53       344
+
+    accuracy                           1.00    199365
+   macro avg       0.73      0.80      0.76    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.8031685814270154
+---------------------------------------
+Learning phase Query: 4
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+C:\Users\18732\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\ensemble\iforest.py:415: DeprecationWarning: threshold_ attribute is deprecated in 0.20 and will be removed in 0.22.
+  " be removed in 0.22.", DeprecationWarning)
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 4: 0.9980
+[[198759    262]
+ [   130    214]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.45      0.62      0.52       344
+
+    accuracy                           1.00    199365
+   macro avg       0.72      0.81      0.76    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.8103882896312332
+---------------------------------------
+Learning phase Query: 5
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+C:\Users\18732\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\ensemble\iforest.py:415: DeprecationWarning: threshold_ attribute is deprecated in 0.20 and will be removed in 0.22.
+  " be removed in 0.22.", DeprecationWarning)
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 5: 0.9980
+[[198745    276]
+ [   123    221]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.44      0.64      0.53       344
+
+    accuracy                           1.00    199365
+   macro avg       0.72      0.82      0.76    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.8205275360681231
+---------------------------------------
+Learning phase Query: 6
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+C:\Users\18732\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\ensemble\iforest.py:415: DeprecationWarning: threshold_ attribute is deprecated in 0.20 and will be removed in 0.22.
+  " be removed in 0.22.", DeprecationWarning)
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 6: 0.9980
+[[198739    282]
+ [   126    218]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.44      0.63      0.52       344
+
+    accuracy                           1.00    199365
+   macro avg       0.72      0.82      0.76    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.8161519971656608
+---------------------------------------
+Learning phase Query: 7
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+C:\Users\18732\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\ensemble\iforest.py:415: DeprecationWarning: threshold_ attribute is deprecated in 0.20 and will be removed in 0.22.
+  " be removed in 0.22.", DeprecationWarning)
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 7: 0.9981
+[[198777    244]
+ [   134    210]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.46      0.61      0.53       344
+
+    accuracy                           1.00    199365
+   macro avg       0.73      0.80      0.76    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.8046195575014112
+---------------------------------------
+Learning phase Query: 8
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+C:\Users\18732\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\ensemble\iforest.py:415: DeprecationWarning: threshold_ attribute is deprecated in 0.20 and will be removed in 0.22.
+  " be removed in 0.22.", DeprecationWarning)
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 8: 0.9980
+[[198748    273]
+ [   129    215]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.44      0.62      0.52       344
+
+    accuracy                           1.00    199365
+   macro avg       0.72      0.81      0.76    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.8118141427286567
+---------------------------------------
+Learning phase Query: 9
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+C:\Users\18732\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\ensemble\iforest.py:415: DeprecationWarning: threshold_ attribute is deprecated in 0.20 and will be removed in 0.22.
+  " be removed in 0.22.", DeprecationWarning)
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 9: 0.9978
+[[198721    300]
+ [   130    214]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.42      0.62      0.50       344
+
+    accuracy                           1.00    199365
+   macro avg       0.71      0.81      0.75    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.8102928223187386
+---------------------------------------
+Learning phase Query: 10
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+C:\Users\18732\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\ensemble\iforest.py:415: DeprecationWarning: threshold_ attribute is deprecated in 0.20 and will be removed in 0.22.
+  " be removed in 0.22.", DeprecationWarning)
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 10: 0.9981
+[[198774    247]
+ [   124    220]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.47      0.64      0.54       344
+
+    accuracy                           1.00    199365
+   macro avg       0.74      0.82      0.77    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.8191469043292497
+
+Process finished with exit code 0

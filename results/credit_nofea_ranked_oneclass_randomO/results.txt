@@ -1,0 +1,270 @@
+C:\Users\18732\AppData\Local\Programs\Python\Python37\python.exe C:/Users/18732/Desktop/paula_final_project/ActiveLearningUnbalancedMain/ActiveLearningUnbalancedMain/ALGeneric_V4.py
+---------------------------------------
+Select data set to perform active learning
+1: Credit Card
+2: adTracking
+3: cis fraud
+1
+---------------------------------------
+Loading Dataset
+---------------------------------------
+Select Feature Selection option
+1: Recursive Feature Selection
+2: No Feature Selection
+2
+---------------------------------------
+Shape of data set :(284807, 30)
+Preparing Initial Training, Pool and Test sets for initial AL
+training set size: 25632
+pool set size: 59810
+test set size: 199365
+---------------------------------------
+Select Strategy
+1: Ranked Batch using Uncertainity
+2: Query By Committee Batch
+1
+---------------------------------------
+---------------------------------------
+Enter Batch Size :(Default is 10)
+
+5
+---------------------------------------
+---------------------------------------
+Enter Outlier Detection Method
+1: LOF
+2: One Class SVM
+3: IForest
+4: No Outlier2
+---------------------------------------
+---------------------------------------
+Enter Data sampling Technique for Imbalanced Data
+1: SMOTE
+2: ADASYN
+3: Random Oversampling
+4: No Sampling
+3
+---------------------------------------
+========================
+Initial Training Results
+========================
+Accuracy after query 0: 0.9988
+[[198907    114]
+ [   133    211]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.65      0.61      0.63       344
+
+    accuracy                           1.00    199365
+   macro avg       0.82      0.81      0.82    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.8063996445741439
+========================
+Learning phase with 10 queries
+Total number of records per batch 5  divided into
+Uncertain samples: 3
+outlier samples: 1
+========================
+---------------------------------------
+Learning phase Query: 1
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 1: 0.9991
+[[198991     30]
+ [   156    188]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.86      0.55      0.67       344
+
+    accuracy                           1.00    199365
+   macro avg       0.93      0.77      0.83    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.7731804450225715
+---------------------------------------
+Learning phase Query: 2
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 2: 0.9990
+[[198972     49]
+ [   159    185]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.79      0.54      0.64       344
+
+    accuracy                           1.00    199365
+   macro avg       0.89      0.77      0.82    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.768772246250045
+---------------------------------------
+Learning phase Query: 3
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 3: 0.9990
+[[198979     42]
+ [   153    191]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.82      0.56      0.66       344
+
+    accuracy                           1.00    199365
+   macro avg       0.91      0.78      0.83    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.7775107625664839
+---------------------------------------
+Learning phase Query: 4
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 4: 0.9990
+[[198955     66]
+ [   131    213]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.76      0.62      0.68       344
+
+    accuracy                           1.00    199365
+   macro avg       0.88      0.81      0.84    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.8094272116077968
+---------------------------------------
+Learning phase Query: 5
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 5: 0.9990
+[[198946     75]
+ [   126    218]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.74      0.63      0.68       344
+
+    accuracy                           1.00    199365
+   macro avg       0.87      0.82      0.84    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.816672042788987
+---------------------------------------
+Learning phase Query: 6
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 6: 0.9990
+[[198962     59]
+ [   131    213]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.78      0.62      0.69       344
+
+    accuracy                           1.00    199365
+   macro avg       0.89      0.81      0.85    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.8094447976916775
+---------------------------------------
+Learning phase Query: 7
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 7: 0.9990
+[[198958     63]
+ [   130    214]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.77      0.62      0.69       344
+
+    accuracy                           1.00    199365
+   macro avg       0.89      0.81      0.84    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.8108882368729816
+---------------------------------------
+Learning phase Query: 8
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 8: 0.9990
+[[198957     64]
+ [   130    214]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.77      0.62      0.69       344
+
+    accuracy                           1.00    199365
+   macro avg       0.88      0.81      0.84    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.8108857245752844
+---------------------------------------
+Learning phase Query: 9
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 9: 0.9990
+[[198960     61]
+ [   134    210]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.77      0.61      0.68       344
+
+    accuracy                           1.00    199365
+   macro avg       0.89      0.81      0.84    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.805079307980004
+---------------------------------------
+Learning phase Query: 10
+Getting pool of data for learner using selected sampling method
+getting Outliers from data pool
+Data Sampling with selected option
+teach with query using uncertainity and outlier data
+========================
+Accuracy after query 10: 0.9990
+[[198954     67]
+ [   127    217]]
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00    199021
+           1       0.76      0.63      0.69       344
+
+    accuracy                           1.00    199365
+   macro avg       0.88      0.82      0.85    199365
+weighted avg       1.00      1.00      1.00    199365
+
+AUC: 0.8152386527984719
+
+Process finished with exit code 0
